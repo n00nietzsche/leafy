@@ -1,7 +1,8 @@
 version: '3'
 services:
   leafy-postgres:
-    image: n00nietzsche/leafy-postgres:7ab4f4775c3ff0d5ec5222d96fb0bf2cb76f65f4
+    platform: linux/arm64/v8
+    image: n00nietzsche/leafy-postgres:c730de4eff0c0df4af5c1b87b81870c774271ed9
     volumes:
       - mydata:/var/lib/postgresql/data
     deploy:
@@ -26,7 +27,8 @@ services:
     restart: on-failure
       
   leafy-front:
-    image: n00nietzsche/leafy-frontend:557b17f0c16f118239e893269cad5c5b6a4f4025
+    platform: linux/arm64/v8
+    image: n00nietzsche/leafy-frontend:c730de4eff0c0df4af5c1b87b81870c774271ed9
     environment:
       - BACKEND_HOST=leafy-backend
     ports:
