@@ -2,7 +2,7 @@
   <div id="app">
     <div class="welcome-message" v-if="isLoggedIn">
       <p class="welcome-text">안녕하세요, <span class="user-name">{{ user.name }}</span>님!</p>
-      <p class="description">(소스코드 재재수정, 이번엔 도커 그거 시크릿 설정했음) 오늘도 즐거운 식물 관리하세요.</p>
+      <p class="description">(소스코드 재재재수정, 이번엔 도커 그거 시크릿 설정했음, steps 에서 platforms 제거) 오늘도 즐거운 식물 관리하세요.</p>
     </div>
     <div class="brand" v-if="isLoggedIn">
       LEAFY
